@@ -1,7 +1,7 @@
 require 'socket'
 require 'uri'
 
-WEB_ROOT = '/home/majames/Documents/web_dev/godhesbig'
+WEB_ROOT = ARGV[0]
 
 CONTENT_TYPE_MAPPING = {
   html: 'text/html',
@@ -43,8 +43,6 @@ server = TCPServer.new('localhost', 2345)
 loop do
   socket = server.accept
   request_line = socket.gets
-
-  STDERR.puts request_line
 
   path = requested_file(request_line)
 
