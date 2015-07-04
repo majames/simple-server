@@ -10,7 +10,8 @@ CONTENT_TYPE_MAPPING = {
   jpg: 'image/jpeg',
   css: 'text/css',
   less: 'text/css',
-  js: 'application/javascript'
+  js: 'application/javascript',
+  jsx: 'application/javascript'
 }
 
 DEFAULT_CONTENT_TYPE = 'application/octet-stream'
